@@ -1,48 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="main.css">
-  <title>Frontend Mentor | NFT preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <meta property="og:image" content="./images/preview.png" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="image-container">
+          <img
+            src="./images/image-equilibrium.jpg"
+            title="Equilibrium"
+            class="image"
+          />
+          <div class="img-back">
+            <img src="./images/icon-view.svg" alt="view" />
+          </div>
+        </div>
+        <div class="card-header">Equilibrium #3429</div>
 
-  <div class="container">
-  <div class ="card">
-  <div class="image-container">
-    
-    <img src="./images/image-equilibrium.jpg" title="Equilibrium" class="image">
-    <div class="img-back">
-      <img src="./images/icon-view.svg" alt="view">
+        <div class="card-desc">
+          Our Equilibrium collection promotes balance and calm.
+        </div>
+
+        <div class="card-more">
+          <div class="card-price">
+            <img
+              src="./images/icon-ethereum.svg"
+              alt="ETH symbol"
+              class="svg-icon"
+            />
+            <div>&nbsp0.041 ETH</div>
+          </div>
+          <div class="card-time">
+            <img
+              src="./images/icon-clock.svg"
+              alt="Clock"
+              class="svg-icon"
+            />&nbsp3 days left
+          </div>
+        </div>
+        <!-- <hr class='card-line'> -->
+        <div class="card-footer">
+          <img
+            src="./images/image-avatar.png"
+            alt="Author Avatat"
+            class="creater-avatar"
+          />&nbsp Creation of <span class="Author">&nbspJules Wyvern</span>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.linkedin.com/in/litesh1998/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Litesh Garg</a
+        >.
+      </div>
     </div>
-</div>
-  <div class="card-header">Equilibrium #3429</div> 
-
-  <div class="card-desc">Our Equilibrium collection promotes balance and calm.</div>
-
-  <div class='card-more'>
-  <div class='card-price'> <img src="./images/icon-ethereum.svg" alt="ETH symbol" class="svg-icon"><div>&nbsp0.041 ETH</div></div>
-  <div class="card-time"><img src="./images/icon-clock.svg" alt="Clock" class="svg-icon">&nbsp3 days left</div>
-  </div>
-  <!-- <hr class='card-line'> -->
-  <div class='card-footer'>
-  <img src="./images/image-avatar.png" alt="Author Avatat" class='creater-avatar'>&nbsp
-  Creation of <span class="Author">&nbspJules Wyvern</span>
-  </div>
-</div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
-    Coded by <a href="https://www.linkedin.com/in/litesh1998/" target="_blank" rel="noopener noreferrer">Litesh Garg</a>.
-  </div>
-</div>
-</body>
+  </body>
 </html>

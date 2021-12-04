@@ -21,7 +21,8 @@
 }
 
 .card{
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     padding: 5px;
     background-color:  hsl(216, 50%, 16%);
     display: flex;
